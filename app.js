@@ -74,6 +74,15 @@ function nextPlayer() {
   document.querySelector(".player-1-panel").classList.toggle("active");
 }
 
+//----------------INSTRUCTION
+document.querySelector(".btn-inst").addEventListener("click", () => {
+  document.querySelector(".intructions").style.display = "block";
+});
+
+document.querySelector(".closeBtn").addEventListener("click", () => {
+  document.querySelector(".intructions").style.display = "none";
+});
+
 function init() {
   playingGame = true;
   activePlayer = 0;
